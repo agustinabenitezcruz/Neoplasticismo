@@ -4,17 +4,25 @@
     padding: 0;
 }
 body{
-    display: flex;
+    
     align-items: center;
     justify-content: space-between;
-
 }
+.row{
+    margin: 0;
+    padding: 0;
+    
+}
+
+
 
 .Header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+    padding-left: 100px;
+    padding-right: 100px;
+    
 }
 
 header{
@@ -23,50 +31,85 @@ header{
     align-content: center;
     justify-content: space-between;
     width: 100%;
-    padding-left: 100px;
-    padding-right: 100px;
+    
 }
 
+.col{
+    max-width: min-content;
+}
 
 .block{
+    display: flex;
+    border-bottom: #111111 2px solid;
     border-right: #111111 2px solid;
     border-left: #111111 2px solid;
     padding: 4px;
-    margin: 0;
+    height: 93px;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    
+}
+
+.block:hover{
+    background-color: #27348B;
+    color: #f5f5f5;
 }
 
 .blueBlock{
+    display: flex;
+    border-bottom: #111111 2px solid;
     border-right: #111111 2px solid;
     border-left: #111111 2px solid;
     background-color: #27348B;
     padding: 4px;
-    margin: 0;
+    height: 93px;
+    justify-content: center;
+    align-items: center;
+    color: #f5f5f5;
+    width: fit-content;
+}
+
+.blueBlock:hover{
+    background-color: #ffffff;
+    color: #111111;
 }
 
 .redBlock{
+    display: flex;
+    border-bottom: #111111 2px solid;
     border-right: #111111 2px solid;
     border-left: #111111 2px solid;
     background-color: #E30613;
-    height: 93px;
     padding: 4px;
-    margin: 0;
+    height: 93px;
+    justify-content: center;
+    align-items: center;
+    color: #f5f5f5;
+    width: fit-content;
+}
+
+.redBlock:hover{
+    background-color: #FFDE00;
+    color: #111111;
 }
 
 .yellowBlock{
+    display: flex;
+    border-bottom: #111111 2px solid;
     border-right: #111111 2px solid;
     border-left: #111111 2px solid;
     background-color: #FFDE00;
-    height: 93px;
     padding: 4px;
-    margin: 0;
+    height: 93px;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
 }
 
-.blueBlock a{
-    color: #f5f5f5;
-    
-}
-.redBlock a{
-    color: #f5f5f5;
+.yellowBlock:hover{
+    background-color: #E30613;
+    color: #111111;
 }
 
 a{
@@ -76,14 +119,134 @@ a{
 
 h1{
     font-family: 'Poppins', sans-serif;
+    font-size:xx-large;
+    text-align: center;
     
 }
+h2{
+    font-family: 'Poppins', sans-serif;
+    font-size:x-large;
+    align-self: flex-start;
+}
+h3{
+    font-family: 'Poppins', sans-serif;
+    font-size:medium;
+    text-align: center;
+    
+}
+
 
 a div img {
     max-width: 291px;
 }
 
 p{
-    text-align: center;
-    
+    font-family: 'Inter', sans-serif;
+    margin: 0px;
+}
+li{
+    font-family: 'Inter', sans-serif;
+    text-align: start;
+    margin: 0px;
+}
+
+
+.height{
+    height: 30vh;
+}
+
+.form{
+    position: relative;
+}
+
+.form .fa-search{
+
+    position: absolute;
+    top:17px;
+    left: 20px;
+    color: #111111;
+
+}
+
+.left-pan{
+    padding-left: 7px;
+}
+
+.left-pan i{
+   
+   padding-left: 10px;
+}
+
+.form-input{
+
+    height: 55px;
+    text-indent: 33px;
+    border-radius: 500px;
+    border: solid #111111 3px
+}
+
+.foto-index {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer{
+    padding-top: 5%;
+    width: 100%;
+}
+
+.footer{
+    border: 2px black solid; 
+}
+
+.text-start {
+    padding-top: 10%;
+}
+
+.form-control{
+    border-radius: 25px;
+    border: #111111 solid 2px;
+    width: 474px;
+}
+
+label{
+    font-family: 'Inter', sans-serif;
+}
+
+.red{
+    background-color: #E30613;
+    color: #f5f5f5;
+}
+
+.blue{
+    background-color: #27348B;
+    color: #f5f5f5;
+}
+
+.yellow{
+    background-color: #FFDE00;
+}
+
+.btn{
+    border-radius: 25px;
+    width: 147px;
+}
+
+.btn:hover{
+    background-color: #27348B;
+    color: #f5f5f5;
+}
+
+.form-control:hover{
+    background-color: #ffffff;
+    color: #111111;
+}
+
+.buscador:hover{
+    background-color: #FFDE00;
+}
+
+.submit{
+    display: none;
 }
